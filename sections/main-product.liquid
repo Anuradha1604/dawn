@@ -104,6 +104,7 @@
                       {{ product.title | escape }}
                     </h2>
                   </a>
+                  <div class="pdp-subtitle">{{ product.metafields.custom.pdp_subtitle }}</div>
                 </div>
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
